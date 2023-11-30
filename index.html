@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Knowledge-Keeper</title>
+</head>
+
+<body>
+  <h1>ナレッジキーパー</h1>
+  <!-- 入力場所を作成しよう -->
+  <form>
+    <fieldset>
+      <legend>新しい投稿</legend>
+      <div>
+        税　　目 : <select id="tax" class="contents"></select>
+      </div>
+      <div>
+        タイトル : <input type="text" id="tittle" class="contents">
+      </div>
+      <div>
+        根拠条文 : <input type="text" id="article" class="contents">
+      </div>
+      <div id="formFlexBox">
+        <div>
+          ナレッジ : <textarea id="text" class="contents"></textarea>
+        </div>
+        <div>
+          <button type="button" id="send">共有する</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <button type="button" id="toggleBtn">＋</button>
+  <div id="togglebox">
+    <div id="searchSection" class="searchFlexBox">
+      <div class="searchFlexBox">
+        <p>税　　目 :　</p>
+        <select id="searchTax" class="searchContents"></select>
+      </div>
+      <div class="searchFlexBox">
+        <p>検索キーワード :　</p>
+        <input type="text" id="searchWord" class="searchContents">
+      </div>
+      <button type="button" id="searchBtn">検索</button>
+    </div>
+  </div>
+
+  <!-- データ出力場所 -->
+  <ul id="output"></ul>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>

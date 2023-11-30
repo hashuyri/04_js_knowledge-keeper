@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    letter-spacing: 0.12em;
+    /* 文字の間隔調整 */
+}
+
+h1 {
+    margin: 0;
+    padding: 15px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(5, 12, 110);
+}
+
+form {
+    margin: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+fieldset {
+    width: 70%;
+    border: 3px #3b3b3b solid;
+    background-color: #a4dff7;
+}
+
+form div {
+    margin: 10px 0;
+}
+
+legend {
+    margin: 0 20px;
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+select {
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+#tittle,
+#article {
+    padding-left: 10px;
+    width: 300px;
+    height: 30px;
+    border-width: 1px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: "Trebuchet MS";
+}
+
+#formFlexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#text {
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: "Trebuchet MS";
+    vertical-align: middle;
+}
+
+#send {
+    margin-right: 50px;
+    width: 200px;
+    height: 60px;
+    border: 1px rgb(5, 12, 110) solid;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    /* 文字の間隔調整 */
+    background-color: rgb(5, 12, 110);
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    display: table;
+    /* 定義 */
+    table-layout: fixed;
+    width: 100%;
+}
+
+li {
+    margin: 10px 30px;
+    padding: 0 20px;
+    list-style-type: none;
+    border: 2px solid #3b3b3b;
+    border-radius: 20px;
+    background-color: #ebeaea;
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+}
+
+#main_tittle {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#timestamp {
+    text-align: right;
+}
+
+#toggleBtn {
+    margin-left: 30px;
+    width: 80px;
+    height: 35px;
+    border: 2px rgb(5, 12, 110) solid;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(5, 12, 110);
+    cursor: pointer;
+}
+
+/* トグルでボタンを押した後 */
+#toggleBtn.toggleorder{
+    color: rgb(5, 12, 110);
+    border: 2px #ebeaea solid;
+    background-color: #ebeaea;
+}
+
+#togglebox {
+    margin: 0;
+    display: none;
+}
+
+.searchFlexBox {
+    margin: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+#searchSection {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 2px #3b3b3b solid;
+}
+
+#searchWord {
+    padding-left: 10px;
+    width: 300px;
+    height: 30px;
+    border-width: 1px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+#searchBtn {
+    margin-left: 50px;
+    width: 100px;
+    height: 35px;
+    border: 2px #000000 solid;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}

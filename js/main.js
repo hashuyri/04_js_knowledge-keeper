@@ -13,7 +13,6 @@ import {
 
 // GitHubにpushするときは下記情報を削除する
 const firebaseConfig = {
-    apiKey: "AIzaSyCcZtwaZn9SBjlKQYSQnhKo2Xh1wdlxk84",
     authDomain: "knowledge-keeper-app.firebaseapp.com",
     projectId: "knowledge-keeper-app",
     storageBucket: "knowledge-keeper-app.appspot.com",

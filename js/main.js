@@ -13,6 +13,7 @@ import {
 
 // GitHubにpushするときは下記情報を削除する
 const firebaseConfig = {
+    apiKey: "",
     authDomain: "knowledge-keeper-app.firebaseapp.com",
     projectId: "knowledge-keeper-app",
     storageBucket: "knowledge-keeper-app.appspot.com",
@@ -76,6 +77,7 @@ function sendContents() {
             text: $("#text").val().replace(/\r\n|\r|\n/g, '<br>'), // 改行を<br>に変換する
             time: serverTimestamp()
         }
+        
         addDoc(collection(db, "knowledgeKeeper"), postData);
         $("#tax").val("");
         $("#tittle").val("");

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -10,51 +10,23 @@
 </head>
 
 <body>
-  <h1>ナレッジキーパー</h1>
-  <!-- 入力場所を作成しよう -->
-  <form>
-    <fieldset>
-      <legend>新しい投稿</legend>
-      <div>
-        税　　目 : <select id="tax" class="contents"></select>
-      </div>
-      <div>
-        タイトル : <input type="text" id="tittle" class="contents">
-      </div>
-      <div>
-        根拠条文 : <input type="text" id="article" class="contents">
-      </div>
-      <div id="formFlexBox">
-        <div>
-          ナレッジ : <textarea id="text" class="contents"></textarea>
-        </div>
-        <div>
-          <button type="button" id="send">共有する</button>
-        </div>
-      </div>
-    </fieldset>
-  </form>
-
-  <button type="button" id="toggleBtn">＋</button>
-  <div id="togglebox">
-    <div id="searchSection" class="searchFlexBox">
-      <div class="searchFlexBox">
-        <p>税　　目 :　</p>
-        <select id="searchTax" class="searchContents"></select>
-      </div>
-      <div class="searchFlexBox">
-        <p>検索キーワード :　</p>
-        <input type="text" id="searchWord" class="searchContents">
-      </div>
-      <button type="button" id="searchBtn">検索</button>
-    </div>
+  <!-- ログイン・新規登録フォーム -->
+  <div class="certification-box">
+    <h2>新規登録</h2>
+    <input type="email" id="signup-email" placeholder="メールアドレス">
+    <input type="password" id="signup-password" placeholder="パスワード">
+    <button id="signup-button">登録</button>
   </div>
 
-  <!-- データ出力場所 -->
-  <ul id="output"></ul>
+  <div class="certification-box">
+    <h2>ログイン</h2>
+    <input type="email" id="email" placeholder="メールアドレス">
+    <input type="password" id="password" placeholder="パスワード">
+    <button id="login-button">ログイン</button>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/index.js"></script>
 
 </body>
 
